@@ -21,7 +21,6 @@ export default function App() {
 
   const queryClient = useQueryClient();
 
-  // Дебаунсована функція зміни пошуку
   const debouncedSearch = useDebouncedCallback((value: string) => {
     setSearchQuery(value);
     setCurrentPage(1);
