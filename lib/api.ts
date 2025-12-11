@@ -1,4 +1,5 @@
 // lib/api.ts
+
 import axios from "axios";
 import type { Note } from "@/types/note";
 

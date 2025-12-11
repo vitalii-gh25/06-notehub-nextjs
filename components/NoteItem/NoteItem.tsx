@@ -1,3 +1,5 @@
+// components/NoteItem/NoteItem.tsx
+
 import Link from "next/link";
 import type { Note } from "@/types/note";
 

@@ -9,11 +9,11 @@ import { fetchNoteById } from "@/lib/api";
 import NoteDetailsClient from "./NoteDetails.client";
 
 type Props = {
-  params: Promise<{ id: string }>;
+  params: { id: string }; // ------------------- ИСПРАВЛЕНО: убрал Promise
 };
 
 const NoteDetails = async ({ params }: Props) => {
-  const { id } = await params;
+  const { id } = params; // ------------------- ИСПРАВЛЕНО
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({
