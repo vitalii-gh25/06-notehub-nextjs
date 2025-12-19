@@ -19,7 +19,7 @@ export interface FetchNotesResponse {
 export interface FetchNotesParams {
   page?: number;
   perPage?: number;
-  search?: number;
+  search?: string;
   tag?: string;
   sortBy?: "created" | "updated";
   signal?: AbortSignal;
